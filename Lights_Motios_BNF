@@ -1,3 +1,59 @@
 *******************************
 //Lights Motions Grupo #
 *******************************
+
+==============================
+// Notacion a utilizar
+==============================
+<simbolo_basico>::= <cadenas> | <letras> | <dígitos> | <valor_booleano> | <delimitador>
+
+<cadena> ::= <letras>
+
+<alfaNumerico>::= <letra>  | <digito>
+
+<letras> ::= A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V
+| W | X | Y | Z | a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v |
+| w | x | y | z 
+
+<dígitos> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+
+<valor_booleano> ::= #TRUE# | #FALSE#
+
+<delimitador> ::= <operador> | <separador> | <bracket> | 
+<declarador> | <especificador >
+
+
+
+<operadores> ::= <operador_aritmetico> | <operador_relacional> | 
+<operador_logico > | <operador_secuencial>
+
+<operador_aritmetico> ::= + | - | * | / | // | ** | ^
+
+<operador_relacional> ::= < | = | > | ~=
+
+<operador_logico> ::= #EQUIV# | #IMPL# | #and# | #OR# | ~
+
+<operador_secuencial> ::= #GO TO# | #IF# | #THEN# | #ELSE# | #FOR# | #DO#
+
+<separador> ::= # | , | . | : | ; | := | #UNTIL# | #WHILE# | #COMMENT# | #CODE#
+
+<bracket> ::= ) | ( | ] | [ | #(# | #)# | #BEGIN# | #END#
+
+
+
+======================================
+//Definición de reflectores a utilizar
+======================================
+<reflector>::= <ListaDeReflectores>
+
+<ListaDeReflectores>::= <alfaNumerico>
+
+<A1>::= <alfaNumerico> <ListaDeReflectores> <reflector>
+<A2>::= <alfaNumerico> <ListaDeReflectores> <reflector>
+<A3>::= <alfaNumerico> <ListaDeReflectores> <reflector>
+<B1>::= <alfaNumerico> <ListaDeReflectores> <reflector>
+<B2>::= <alfaNumerico> <ListaDeReflectores> <reflector>
+<B3>::= <alfaNumerico> <ListaDeReflectores> <reflector>
+<C1>::= <alfaNumerico> <ListaDeReflectores> <reflector>
+<C2>::= <alfaNumerico> <ListaDeReflectores> <reflector>
+<C3>::= <alfaNumerico> <ListaDeReflectores> <reflector>
