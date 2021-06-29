@@ -57,3 +57,21 @@
 <C1>::= <alfaNumerico> <ListaDeReflectores> <reflector>
 <C2>::= <alfaNumerico> <ListaDeReflectores> <reflector>
 <C3>::= <alfaNumerico> <ListaDeReflectores> <reflector>
+
+
+======================================
+//Definición de las Fuentes de agua 
+======================================
+<fuentesDeAgua>::= <ListaDefuentesDeAgua>
+
+<ListaDefuentesDeAgua>::= <alfaNumerico>
+
+<A1>::= <alfaNumerico> <ListaDefuentesDeAgua> <fuentesDeAgua>
+<A2>::= <alfaNumerico> <ListaDefuentesDeAgua> <fuentesDeAgua>
+<A3>::= <alfaNumerico> <ListaDefuentesDeAgua> <fuentesDeAgua>
+<B1>::= <alfaNumerico> <ListaDefuentesDeAgua> <fuentesDeAgua>
+<B2>::= <alfaNumerico> <ListaDefuentesDeAgua> <fuentesDeAgua>
+<B3>::= <alfaNumerico> <ListaDefuentesDeAgua> <fuentesDeAgua>
+<C1>::= <alfaNumerico> <ListaDefuentesDeAgua> <fuentesDeAgua>
+<C2>::= <alfaNumerico> <ListaDefuentesDeAgua> <fuentesDeAgua>
+<C3>::= <alfaNumerico> <ListaDefuentesDeAgua> <fuentesDeAgua>
