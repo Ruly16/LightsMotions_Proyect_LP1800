@@ -17,6 +17,10 @@
 | W | X | Y | Z | a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v |
 | w | x | y | z 
 
+<entero> ::= <digito>
+
+<flotante> ::= <digito> <separador> <digito>
+
 <dígitos> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
 
 <valor_booleano> ::= #TRUE# | #FALSE#
@@ -44,6 +48,7 @@
 ============================
 //Sentencias
 ===========================
+
 <Sentencia> ::= <SentenciaDeAsignación> | <SentenciaDeRetorno> | <SentenciaDeImpresión> | <SentenciaNula> |
                <SentenciaCondicional> | <SentenciaWhile> | <Bloque>
 
@@ -76,6 +81,24 @@
                 <Variable> | <Variable> (<ListaDeArgumentos> )
 
 <OperadorUnario> ::= -
+
+=================================
+//Definición de colores
+=================================
+<color> ::= <Rojo> | <Verde> | <Azul> | <Amarillo> | Blanco
+<Azul> ::= <#0000FF>
+<Verde> ::= <#008000>
+<Rojo> ::= <#FF0000>
+<Amarillo> ::= <#FFFF00>
+<Blanco> ::= <#000000>
+
+<intensidad> ::= <lumen> | <PSI>
+
+<lumen> ::=  <operador_aritmetico> <entero> | <operador_aritmetico> <flotante>
+
+<PSI> ::= <operador_aritmetico> <entero> | <operador_aritmetico> <flotante>
+
+<flotante> ::= <entero> <separador> <entero>
 
 ======================================
 //Definición de reflectores a utilizar
