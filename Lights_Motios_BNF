@@ -11,6 +11,8 @@
 
 <alfaNumerico>::= <letra>  | <digito>
 
+<Variable> ::= <Letra> | <Variable> <Alfanumérico>
+
 <letras> ::= A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V
 | W | X | Y | Z | a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v |
 | w | x | y | z 
@@ -39,7 +41,41 @@
 
 <bracket> ::= ) | ( | ] | [ | #(# | #)# | #BEGIN# | #END#
 
+============================
+//Sentencias
+===========================
+<Sentencia> ::= <SentenciaDeAsignación> | <SentenciaDeRetorno> | <SentenciaDeImpresión> | <SentenciaNula> |
+               <SentenciaCondicional> | <SentenciaWhile> | <Bloque>
 
+
+<SentenciaDeAsignación> ::= <Variable> := <Expresión>
+
+<SentenciaDeRetorno> ::= RETURN <Expresión>
+
+<SentenciaDeImpresión> ::= PRINT <ListaDeImpresión>
+
+<ListaDeImpresión> ::= <ElementoDeImpresión> | <ListaDeImpresión> , <ElementoDeImpresión>
+
+<ElementoDeImpresión> ::= <Expresión> | “<Texto> ”
+
+<Texto> ::= <Carácter> | <Carácter> <Texto>
+
+<Carácter> ::= <CarácterImprimible> | <CarácterEscapado>
+
+<CarácterImprimible> ::= Cualquier carácter ASCII imprimible
+
+<CarácterEscapado> ::= \n
+
+<SentenciaNula> ::= CONTINUE 
+
+<SentenciaCondicional> ::= IF <Expresión> THEN <Sentencia> FI | IF <Expresión> THEN <Sentencia> ELSE <Sentencia> FI
+
+<SentenciaWhile> ::= WHILE <Expresión> DO <Sentencia> DONE
+
+<Expresión> ::= <Expresión> <operador_aritmetico> <Expresión> | <OperadorUnario> <Expresión> | ( <Expresión> ) | <Entero> |
+                <Variable> | <Variable> (<ListaDeArgumentos> )
+
+<OperadorUnario> ::= -
 
 ======================================
 //Definición de reflectores a utilizar
