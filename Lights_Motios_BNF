@@ -73,7 +73,7 @@
 
 <SentenciaNula> ::= CONTINUE 
 
-<SentenciaCondicional> ::= IF <Expresión> THEN <Sentencia> FI | IF <Expresión> THEN <Sentencia> ELSE <Sentencia> FI
+<SentenciaCondicional> ::= IF <Expresión> THEN <Sentencia> FIN | IF <Expresión> THEN <Sentencia> ELSE <Sentencia> FIN
 
 <SentenciaWhile> ::= WHILE <Expresión> DO <Sentencia> DONE
 
@@ -107,6 +107,15 @@
 <encendido> ::= <estado>
 <apagado> ::= <estado> 
 <estado> ::= <ON> | <OFF>
+
+==============================
+//Definición de Funciones
+=============================
+
+<listadefunciones> ::= <funcion> | <listadefunciones><funcion>
+<funcion> ::= func <varibles> | <parametros> | <sentencia>
+<parametro> ::= <variable>
+<sentencia> ::= <SentenciaDeRetorno>
 
 ======================================
 //Definición de reflectores a utilizar
