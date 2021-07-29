@@ -27,5 +27,19 @@ int TMatriz(){
 	    scanf("%f",&opc);
   
   //condicional
+	   switch(opc){
+	    	case 1:
+	    	        printf("\n reflector de dimension: %i" ,opc); 
+	    		break;
+	    	case 2:
+	    			printf("\n reflector de dimension: %i" ,opc); 
+			    break;
+			case 4:
+			    	printf("\n reflector de dimension: %i" ,opc); 
+			    break;	
+			default:
+				printf("\nLa opcion que escogio es invalida "); 
+				
+		}
 	   
 }
