@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-bool lector();
+void lector();
 
 
  // Funcion main
@@ -13,6 +13,8 @@ int main(){
   return 0;
 }
 
-bool lector(){
+void lector(){
 
-}
+	}
+	
+
