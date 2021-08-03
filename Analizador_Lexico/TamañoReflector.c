@@ -19,12 +19,13 @@ int TMatriz(){
     
 	
 	printf("Escoger dimension de reflector ");
+	//scanf ("%i" tamano);
 	//lector del array
 	   for(i=0; i<3; i++){
 		printf("%i, " , tamano[i]);
 	    } 
 	printf("\nOpcion: ");    
-	    scanf("%f",&opc);
+	    scanf("%i",&opc);
   
   //condicional
 	   switch(opc){
