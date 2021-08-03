@@ -8,6 +8,7 @@
 // Agregando las funciones creadas en un solo programa
 bool estado_reflectores();
 bool estado_fuentes();
+void lector2();
 
 
 
@@ -21,6 +22,7 @@ int main(){
 	printf("\n");
 	ClrReflector(); 
 	printf("\n");
+	lector2();
 
 	
 
@@ -108,6 +110,9 @@ bool estado_fuentes(){
 //Función del tamaño del reflector
 int TMatriz(){
 	
+		printf("\n -----------Tama�o del reflector-----------");
+		printf("\n");
+	
   //tamaños disponibles
 	 int tamano[] = {1,2,4};
     int i, opc;
@@ -136,11 +141,15 @@ int TMatriz(){
 				printf("\nLa opcion que escogio es invalida "); 
 				
 		}
-	   
+	  	printf("\n"); 
 }
 
 //funcion de seleccion del color de reflectores
 void ClrReflector(){
+	
+		printf("\n ----------Seleccion de Color ----------");
+			printf("\n");
+	
 	char *colores[clr]={
 	"amarillo",
 	"azul",
@@ -193,7 +202,42 @@ void ClrReflector(){
 				printf("\nLa opcion que escogio es invalida "); 
 				
 		}
-	   
-		
+	printf("\n");
+}
+
+
+void lector2(){
+	
+		printf("\n ----------Lectura de Archivo ----------");
+			printf("\n");
+	
+	FILE * flujo = fopen ("Programa.txt","rb");
+	if (flujo == NULL){
+		perror ("Error al Abrir el Archivo");
+		return 1;
+	}
+	
+	fseek (flujo, 0, SEEK_END);
+	int num_elementos = ftell(flujo);
+	rewind (flujo);
+	
+	char * cadena = (char *) calloc(sizeof(char), num_elementos);
+	if (cadena == NULL){
+		perror ("Error en reserva de Memoria");
+		return 2;
+	} 
+	
+	int num_elementos_leidos = fread(cadena, sizeof(char), num_elementos, flujo);
+	if (num_elementos_leidos != num_elementos){
+		perror ("Error de lectura de archivo");
+		return 3;
+	}
+	
+	printf("%s\n", cadena);
+	
+	free(cadena);
+	fclose(flujo);
+	printf("\n\n Se a leido correctamente el archivo");
+
 
 }
