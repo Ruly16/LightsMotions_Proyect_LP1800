@@ -1,10 +1,5 @@
-#include<stdio.h>
-
-Hola
-
-int main(){
-	
-	// Aqui van todas las funciones
-
-  return 0;
-}
+Hola Mundo!!
+Nosotros somos el Grupo#8
+Y este es nuestro proyecto 
+Cantidad de reflectores [20]
+Cantidad de Fuentes [20]
