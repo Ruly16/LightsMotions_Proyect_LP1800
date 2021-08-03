@@ -147,7 +147,7 @@ int TMatriz(){
 //funcion de seleccion del color de reflectores
 void ClrReflector(){
 	
-		printf("\n ----------Selección de Color ----------");
+		printf("\n ----------Seleccion de Color ----------");
 			printf("\n");
 	
 	char *colores[clr]={
