@@ -15,7 +15,7 @@ int main()
     return 0;
 }
 // funcion para verificar  el tipo de reflectores
-void verificar()
+void verificar(
 {
     char tiposReflectores[4]={"1","2","3","4"};e
     char tipoSeleccionado ="";
