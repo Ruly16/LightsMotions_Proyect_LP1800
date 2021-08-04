@@ -1,33 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include<string.h>
+
 // prototipos de funciones
 
-void  verificar ( );
+void  verificar (char c[]);
 // variables globales
-int limRef=4;
-int tiposReflectores[ ]={1,2,3,4};
+int limRef=0;
+char tiposReflectores[limRef]={ };
 
 int main()
 {
-    int  b[]={1,2,3,4 };
-    verificar();
+    char b[]={""};
+    verificar(b[]);
     return 0;
 }
 // funcion para verificar  el tipo de reflectores
-void verificar(int a[])
+void verificar(
 {
-    int opcion ="";
-    int tipoSeleccionado ="";
-        for(int i=0; i<limRef;i++){
-            printf("ingrese el tipo de reflector:");
-            scanf ("%i",&opcion);
-
-        if(tiposReflectores[i] == opcion ){
-                tipoSeleccionado=tiposReflectores[i];
-                printf("el tipo de reflector seleccionado es:",tipoSeleccionado);
-
-
+    char tiposReflectores[4]={"1","2","3","4"};e
+    char tipoSeleccionado ="";
+    for(int i=0; i<limRef;i++){
+        if(limfRef=="1"){
+                tipoSeleccionado=limRef;
+                printf("ek tipo de reflector seleccionado es:",tipoSeleccionado);
         };
 
     };
