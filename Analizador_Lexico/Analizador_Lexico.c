@@ -9,20 +9,24 @@
 bool estado_reflectores();
 bool estado_fuentes();
 void lector2();
-
+bool  tipoReflector ();
 
 
  // Funcion main
 int main(){
 	
+	
+	lector2();
 	estado_reflectores();
 	estado_fuentes();
 	printf("\n");
 	TMatriz();  
 	printf("\n");
+	tipoReflector();
+	printf("\n");
 	ClrReflector(); 
 	printf("\n");
-	lector2();
+	
 
 	
 
@@ -241,3 +245,40 @@ void lector2(){
 
 
 }
+
+// funcion para verificar  el tipo de reflectores
+bool  tipoReflector( int a [])
+{
+   int opcion;
+    int tipoSeleccionado;
+    int i;
+    
+      printf("\n---------- Tipos de Reflectores---------- ");
+    printf("\n 1. Un solo color ");
+    printf("\n 2. Dos colores ");
+    printf("\n 3. Cuatro Colores ");
+    
+    printf("\nIngrese el tipo de reflector: ");
+     scanf("%i", &opcion);
+     
+    	switch(opcion){
+	    	case 1:
+	    	        printf("\n Reflector seleccionado es de Un Solo color "); 
+	    		break;
+	    	case 2:
+	    		    printf("\n Reflector seleccionado es de Dos Colores");
+			    break;
+			case 3:			    
+	    	        printf("\n Refletor seleccionado es de Cuatro Colores");
+			    break;					
+			default:
+				printf("\nLa opcion que escogio es invalida "); 
+				
+		} 
+ 
+
+
+        };
+
+
+

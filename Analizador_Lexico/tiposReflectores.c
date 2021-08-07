@@ -5,7 +5,7 @@
 
 // prototipos de funciones
 
-bool  verificar ();
+bool  tipoReflector ();
 // variables globales
 int limRef=4;
 int tiposReflectores[ ]={1,2,3,4 };
@@ -14,11 +14,11 @@ int main()
 {
     
    int b [ ] = {1, 2, 3, 4};
-   verificar();
+    tipoReflector();
     return 0;
 }
 // funcion para verificar  el tipo de reflectores
-bool verificar( int a [])
+bool  tipoReflector( int a [])
 {
    int opcion;
     int tipoSeleccionado;

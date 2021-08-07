@@ -51,6 +51,7 @@ bool estado_reflectores(){
 	else if (estado_r!=1)
 		{
 			printf("\nEl Reflector esta apagado");
+			return 0;
 		}
 
 	return false;
