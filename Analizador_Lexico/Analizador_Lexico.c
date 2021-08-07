@@ -11,6 +11,14 @@ bool estado_fuentes();
 void lector2();
 bool  tipoReflector ();
 
+//Partes del Analizador Lexico
+char *reservadas[] = {"Entero","Flotante","Cadena","Array", "FUNC",
+					  "PRINT", "\n", "RETURN","PAUSE", "IF", "ELSE","WHILE"}; 
+					  
+int auxVariables=0;
+int auxReservadas=0;
+int auxOperador=0;
+
 
  // Funcion main
 int main(){
